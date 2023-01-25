@@ -1,7 +1,11 @@
-import type { AppProps } from "next/app";
-import React from "react";
-import "../styles/globals.scss";
-import Head from "next/head";
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+import type { AppProps } from 'next/app';
+import Head from 'next/head';
+import React from 'react';
+import '../styles/globals.scss';
 
 const App: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
