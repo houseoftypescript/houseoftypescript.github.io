@@ -11,6 +11,7 @@ export const Subscribe: React.FC<{ title: string; description: string }> = ({
 }) => {
   return (
     <section
+      id="subscribe"
       className="py-0 md:py-32 bg-[#F8F0EA] bg-bottom bg-contain bg-no-repeat"
       style={{
         backgroundImage: `url(${background.src})`,
@@ -18,7 +19,7 @@ export const Subscribe: React.FC<{ title: string; description: string }> = ({
     >
       <div className="container mx-auto">
         <div className="bg-white rounded-none md:rounded-2xl">
-          <div className="px-4 py-8 md:p-16">
+          <div className="px-4 py-8 md:px-8 md:py-16">
             <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
               <div className="col-span-1">
                 <Heading
@@ -26,6 +27,7 @@ export const Subscribe: React.FC<{ title: string; description: string }> = ({
                   description={description}
                   align="text-center md:text-left"
                   bottom={false}
+                  enhanced
                 />
               </div>
               <div className="col-span-1">

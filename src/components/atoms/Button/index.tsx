@@ -8,7 +8,7 @@ export const Button: React.FC<{
   return (
     <button
       type={type}
-      className={`px-8 py-4 rounded-md bg-green-900 hover:bg-gray-900 text-white transition ${className}`}
+      className={`px-8 py-4 rounded-md bg-emerald-500 hover:bg-gray-900 text-white transition duration-500 ${className}`}
     >
       {children}
     </button>

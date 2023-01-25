@@ -10,7 +10,7 @@ export const Input: React.FC<{
       id={id}
       name={name}
       placeholder={placeholder}
-      className="w-full px-8 py-4 rounded-md bg-[#EFF3F7] hover:border-green-900 active:border-green-900"
+      className="w-full px-8 py-4 rounded-md bg-[#EFF3F7] hover:border-emerald-500 active:border-emerald-500 focus:border-emerald-500"
     />
   );
 };

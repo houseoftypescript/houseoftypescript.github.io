@@ -9,3 +9,16 @@ body {
 .font-b162 {
   font-family: 'B612', sans-serif;
 }
+
+.nav-scroll-link {
+  &.active {
+    color: rgb(16, 185, 129);
+  }
+}
+
+.is-sticky {
+  nav {
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+      0 4px 6px -4px rgb(0 0 0 / 0.1);
+  }
+}
