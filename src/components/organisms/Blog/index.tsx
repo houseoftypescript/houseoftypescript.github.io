@@ -13,7 +13,7 @@ export const Blog: React.FC<{
   posts: any[];
 }> = ({ title = '', description = '', posts = [] }) => {
   return (
-    <section id="blog" className="py-32">
+    <section id="blog" className="py-16">
       <Container>
         <Heading title={title} description={description} />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

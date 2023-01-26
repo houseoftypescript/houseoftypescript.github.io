@@ -4,6 +4,7 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
+import 'rc-tabs/assets/index.css';
 import React from 'react';
 import 'swiper/swiper-bundle.min.css';
 import '../styles/globals.scss';

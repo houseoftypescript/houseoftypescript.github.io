@@ -11,7 +11,7 @@ export const Service: React.FC<{
         <Image src={image} alt={title} className="mx-auto" />
       </div>
       <div className="col-span-2">
-        <div className="text-center sm:text-left">
+        <div className="text-center sm:text-justify">
           <div className="mb-4">
             <h3 className="font-bold text-md sm:text-lg">{title}</h3>
           </div>

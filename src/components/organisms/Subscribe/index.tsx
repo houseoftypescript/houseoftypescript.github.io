@@ -12,7 +12,7 @@ export const Subscribe: React.FC<{ title: string; description: string }> = ({
   return (
     <section
       id="subscribe"
-      className="py-0 md:py-32 bg-[#F8F0EA] bg-bottom bg-contain bg-no-repeat"
+      className="py-0 md:py-16 bg-[#F8F0EA] bg-bottom bg-contain bg-no-repeat"
       style={{
         backgroundImage: `url(${background.src})`,
       }}
