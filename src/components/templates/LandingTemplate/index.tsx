@@ -17,6 +17,7 @@ export const LandingTemplate: React.FC = () => {
     <>
       <SEO />
       <Navbar title={content.title} items={content.navbar.items} />
+
       <main>
         <Hero
           title={content.hero.title}
