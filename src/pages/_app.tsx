@@ -5,6 +5,7 @@ import '@fontsource/roboto/700.css';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import React from 'react';
+import 'swiper/swiper-bundle.min.css';
 import '../styles/globals.scss';
 
 const App: React.FC<AppProps> = ({ Component, pageProps }) => {

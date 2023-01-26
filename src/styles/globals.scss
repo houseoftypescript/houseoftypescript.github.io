@@ -22,3 +22,18 @@ body {
       0 4px 6px -4px rgb(0 0 0 / 0.1);
   }
 }
+
+.swiper-container {
+  position: relative;
+
+  .swiper-arrow {
+    top: calc(50% - 40px);
+    transform: translateY(-50%);
+  }
+
+  .swiper-arrow-left {
+    img {
+      transform: rotate(180deg);
+    }
+  }
+}
