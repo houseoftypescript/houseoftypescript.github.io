@@ -2,8 +2,8 @@ import Image, { StaticImageData } from 'next/image';
 
 export const Service: React.FC<{
   image: string | StaticImageData;
-  title: string;
-  description: string;
+  title?: string;
+  description?: string;
 }> = ({ image, title = '', description = '' }) => {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-3 gap-x-0 gap-y-8 md:gap-8">

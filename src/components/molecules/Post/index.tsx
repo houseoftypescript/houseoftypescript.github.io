@@ -1,10 +1,10 @@
-import Image, { StaticImageData } from 'next/image';
+import { StaticImageData } from 'next/image';
 import React from 'react';
 
 export const Post: React.FC<{
   image: StaticImageData;
-  title: string;
-  description: string;
+  title?: string;
+  description?: string;
 }> = ({ image, title = '', description = '' }) => {
   return (
     <div>

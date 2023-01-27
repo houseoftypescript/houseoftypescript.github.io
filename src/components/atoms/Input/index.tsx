@@ -1,12 +1,14 @@
 import React from 'react';
 
 export const Input: React.FC<{
-  id: string;
-  name: string;
-  placeholder: string;
-}> = ({ id = '', name = '', placeholder = '' }) => {
+  id?: string;
+  type?: React.HTMLInputTypeAttribute;
+  name?: string;
+  placeholder?: string;
+}> = ({ type = 'text', id = '', name = '', placeholder = '' }) => {
   return (
     <input
+      type={type}
       id={id}
       name={name}
       placeholder={placeholder}

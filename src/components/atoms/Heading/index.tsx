@@ -1,8 +1,8 @@
 import React from 'react';
 
 export const Heading: React.FC<{
-  title: string;
-  description: string;
+  title?: string;
+  description?: string;
   align?: 'text-center' | 'text-left' | string;
   bottom?: boolean;
   enhanced?: boolean;

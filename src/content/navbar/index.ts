@@ -21,9 +21,9 @@ const navbar = {
       text: 'Why Us',
     },
     {
-      id: 'blog',
-      link: 'blog',
-      text: 'Blog',
+      id: 'projects',
+      link: 'projects',
+      text: 'Projects',
     },
   ],
 };

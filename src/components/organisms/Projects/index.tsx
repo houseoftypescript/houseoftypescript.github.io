@@ -7,13 +7,13 @@ import Post from '../../molecules/Post';
 
 const images = [project1, project2, project3];
 
-export const Blog: React.FC<{
+export const Projects: React.FC<{
   title: string;
   description: string;
   posts: any[];
 }> = ({ title = '', description = '', posts = [] }) => {
   return (
-    <section id="blog" className="py-16">
+    <section id="projects" className="py-16">
       <Container>
         <Heading title={title} description={description} />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -31,4 +31,4 @@ export const Blog: React.FC<{
   );
 };
 
-export default Blog;
+export default Projects;

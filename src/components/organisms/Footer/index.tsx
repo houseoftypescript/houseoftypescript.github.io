@@ -5,24 +5,27 @@ import Link from 'next/link';
 import React from 'react';
 import Container from '../../atoms/Container';
 
-const Footer: React.FC = () => {
+const Footer: React.FC<{ title: string; socialLinks: any[] }> = ({
+  title = '',
+  socialLinks = [],
+}) => {
   const year = new Date().getFullYear();
 
   return (
     <footer className="py-8 border-t md:border-none">
       <Container>
         <div className="flex items-center justify-between">
-          <div className="font-medium font-lg">&copy; {year} HNT</div>
+          <div className="font-medium font-lg">
+            &copy; {year} {title}
+          </div>
           <div className="flex items-center gap-2 md:gap-4">
-            <Link href="#">
-              <FacebookIcon fontSize="medium" className="text-[#1877f2]" />
-            </Link>
-            <Link href="#">
-              <TwitterIcon fontSize="medium" className="text-[#1da1f2]" />
-            </Link>
-            <Link href="#">
-              <GitHubIcon fontSize="medium" className="text-[#333333]" />
-            </Link>
+            {socialLinks.map(({ id, link, icon }) => {
+              return (
+                <Link key={id} href={link} target={'_blank'}>
+                  {icon}
+                </Link>
+              );
+            })}
           </div>
         </div>
       </Container>

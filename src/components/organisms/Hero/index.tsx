@@ -17,7 +17,7 @@ export const Hero: React.FC<{ title: string; description: string }> = ({
         <div className="relative">
           <div className="sm:absolute top-0 w-full flex justify-center pb-16">
             <ScrollLink
-              to="subscribe"
+              to="contact"
               spy={true}
               offset={-70}
               smooth={true}

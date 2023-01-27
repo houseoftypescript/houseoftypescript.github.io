@@ -1,14 +1,14 @@
 import React from 'react';
 import content from '../../../content';
-import Blog from '../../organisms/Blog';
+import Contact from '../../organisms/Contact';
 import Footer from '../../organisms/Footer';
 import Hero from '../../organisms/Hero';
 import Navbar from '../../organisms/Navbar';
-import OtherServices from '../../organisms/OtherServices';
+import Projects from '../../organisms/Projects';
 import SEO from '../../organisms/SEO';
 import Services from '../../organisms/Services';
-import Subscribe from '../../organisms/Subscribe';
 import Team from '../../organisms/Team';
+import Techstack from '../../organisms/Techstack';
 import Testimonials from '../../organisms/Testimonials';
 import Why from '../../organisms/Why';
 
@@ -17,7 +17,6 @@ export const LandingTemplate: React.FC = () => {
     <>
       <SEO />
       <Navbar title={content.title} items={content.navbar.items} />
-
       <main>
         <Hero
           title={content.hero.title}
@@ -34,23 +33,23 @@ export const LandingTemplate: React.FC = () => {
           description={content.team.description}
           members={content.team.members}
         />
-        <OtherServices
-          title={content.otherServices.title}
-          description={content.otherServices.description}
-          services={content.otherServices.services}
+        <Techstack
+          title={content.techstack.title}
+          description={content.techstack.description}
+          services={content.techstack.services}
         />
         <Why reasons={content.why.reasons} />
-        <Blog
-          title={content.blog.title}
-          description={content.blog.description}
-          posts={content.blog.posts}
+        <Projects
+          title={content.projects.title}
+          description={content.projects.description}
+          posts={content.projects.posts}
         />
-        <Subscribe
-          title={content.subscribe.title}
-          description={content.subscribe.description}
+        <Contact
+          title={content.contact.title}
+          description={content.contact.description}
         />
       </main>
-      <Footer />
+      <Footer title={content.title} socialLinks={content.footer.socialLinks} />
     </>
   );
 };

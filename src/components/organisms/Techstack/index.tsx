@@ -12,7 +12,7 @@ import { ServiceType } from '../Services';
 
 const icons = [service4, service5, service6, service7, service8, service9];
 
-export const OtherServices: React.FC<{
+export const Techstack: React.FC<{
   title: string;
   description: string;
   services: ServiceType[];
@@ -40,4 +40,4 @@ export const OtherServices: React.FC<{
   );
 };
 
-export default OtherServices;
+export default Techstack;

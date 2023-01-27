@@ -54,7 +54,7 @@ export const Navbar: React.FC<{ title?: string; items?: any[] }> = ({
                 </div>
                 <div className="flex items-center gap-8">
                   <ScrollLink
-                    to="subscribe"
+                    to="contact"
                     spy={true}
                     offset={-70}
                     smooth={true}

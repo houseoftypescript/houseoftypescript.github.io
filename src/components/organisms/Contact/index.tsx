@@ -5,17 +5,15 @@ import Checkbox from '../../atoms/Checkbox';
 import Heading from '../../atoms/Heading';
 import Input from '../../atoms/Input';
 
-export const Subscribe: React.FC<{ title: string; description: string }> = ({
+export const Contact: React.FC<{ title: string; description: string }> = ({
   title = '',
   description = '',
 }) => {
   return (
     <section
-      id="subscribe"
+      id="contact"
       className="py-0 md:py-16 bg-[#F8F0EA] bg-bottom bg-contain bg-no-repeat"
-      style={{
-        backgroundImage: `url(${background.src})`,
-      }}
+      style={{ backgroundImage: `url(${background.src})` }}
     >
       <div className="container mx-auto">
         <div className="bg-white rounded-none md:rounded-2xl">
@@ -40,7 +38,7 @@ export const Subscribe: React.FC<{ title: string; description: string }> = ({
                     />
                   </div>
                   <div className="col-span-1">
-                    <Button className="w-full">Subscribe</Button>
+                    <Button className="w-full">Contact</Button>
                   </div>
                   <div className="col-span-1 md:col-span-3">
                     <Checkbox
@@ -58,4 +56,4 @@ export const Subscribe: React.FC<{ title: string; description: string }> = ({
   );
 };
 
-export default Subscribe;
+export default Contact;
