@@ -1,9 +1,9 @@
 import React from 'react';
-import Heading from '../../atoms/Heading';
-import Container from '../../atoms/Container';
 import service1 from '../../../assets/images/services/service1.png';
 import service2 from '../../../assets/images/services/service2.png';
 import service3 from '../../../assets/images/services/service3.png';
+import Container from '../../atoms/Container';
+import Heading from '../../atoms/Heading';
 import Service from '../../molecules/Service';
 
 const icons = [service1, service2, service3];

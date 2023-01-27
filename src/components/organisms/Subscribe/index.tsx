@@ -1,9 +1,9 @@
 import React from 'react';
 import background from '../../../assets/images/background/subscribe.png';
-import Heading from '../../atoms/Heading';
-import Input from '../../atoms/Input';
 import Button from '../../atoms/Button';
 import Checkbox from '../../atoms/Checkbox';
+import Heading from '../../atoms/Heading';
+import Input from '../../atoms/Input';
 
 export const Subscribe: React.FC<{ title: string; description: string }> = ({
   title = '',

@@ -28,17 +28,18 @@ export const LandingTemplate: React.FC = () => {
           description={content.services.description}
           services={content.services.services}
         />
-        <Testimonials />
+        <Testimonials testimonials={content.testimonials} />
         <Team
           title={content.team.title}
           description={content.team.description}
+          members={content.team.members}
         />
         <OtherServices
           title={content.otherServices.title}
           description={content.otherServices.description}
           services={content.otherServices.services}
         />
-        <Why />
+        <Why reasons={content.why.reasons} />
         <Blog
           title={content.blog.title}
           description={content.blog.description}

@@ -6,63 +6,24 @@ import React from 'react';
 import tabImage1 from '../../../assets/images/tab-illustration-1.png';
 import Container from '../../atoms/Container';
 
-const data = [
-  {
-    tab: 'Why you choose our service?',
-    title: 'We will turn your idea in the successful business model framework',
-    description:
-      'Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever.',
-    items: [
-      'Medical and vision',
-      'Life insurance',
-      'HSAs and FSAs',
-      'Commuter benefits',
-    ],
-  },
-  {
-    tab: "What's our business promise?",
-    title: 'We will turn your idea in the successful business model framework',
-    description:
-      'Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever.',
-    items: [
-      'Medical and vision',
-      'Life insurance',
-      'HSAs and FSAs',
-      'Commuter benefits',
-    ],
-  },
-  {
-    tab: "What's our role model plan?",
-    title: 'We will turn your idea in the successful business model framework',
-    description:
-      'Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever.',
-    items: [
-      'Medical and vision',
-      'Life insurance',
-      'HSAs and FSAs',
-      'Commuter benefits',
-    ],
-  },
-];
-
-export const Why: React.FC = () => {
+export const Why: React.FC<{ reasons: any[] }> = ({ reasons = [] }) => {
   return (
     <section id="why" className="pt-32 pb-16 why-container">
       <Container>
         <Tabs defaultActiveKey="tab-0" animated={{ tabPane: true }}>
-          {data.map((item, index: number) => {
+          {reasons.map((reason, index: number) => {
             return (
-              <TabPane key={`tab-${index}`} tab={item.tab}>
+              <TabPane key={`tab-${index}`} tab={reason.tab}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div className="col-span-1 py-8">
                     <h2 className="text-2xl md:text-3xl mb-4 md:mb-8 font-bold">
-                      {item.title}
+                      {reason.title}
                     </h2>
                     <p className="text-base md:text-lg mb-4 md:mb-8">
-                      {item.description}
+                      {reason.description}
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4">
-                      {item.items.map((item: string, index: number) => {
+                      {reason.items.map((item: string, index: number) => {
                         return (
                           <div
                             key={`item-${index}`}

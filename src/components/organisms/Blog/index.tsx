@@ -1,9 +1,9 @@
-import Heading from '../../atoms/Heading';
-import Post from '../../molecules/Post';
-import Container from '../../atoms/Container';
 import project1 from '../../../assets/images/blog/1.png';
 import project2 from '../../../assets/images/blog/2.png';
 import project3 from '../../../assets/images/blog/3.png';
+import Container from '../../atoms/Container';
+import Heading from '../../atoms/Heading';
+import Post from '../../molecules/Post';
 
 const images = [project1, project2, project3];
 

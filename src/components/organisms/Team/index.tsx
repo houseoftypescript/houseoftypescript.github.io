@@ -1,174 +1,12 @@
 import Image from 'next/image';
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 import SwiperCore, { Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperRef, SwiperSlide } from 'swiper/react';
 import arrowRight from '../../../assets/images/icons/arrow-right.png';
-import avatar1 from '../../../assets/images/team/member1.png';
-import avatar2 from '../../../assets/images/team/member2.png';
-import avatar3 from '../../../assets/images/team/member3.png';
-import avatar4 from '../../../assets/images/team/member4.png';
-import Container from '../../atoms/Container';
 import Heading from '../../atoms/Heading';
 import Member from '../../molecules/Member';
 
 SwiperCore.use([Navigation, Pagination]);
-
-const data = [
-  {
-    id: 1,
-    avatar: avatar1,
-    name: 'Emmalee Mclain',
-    designation: 'Product Designer',
-    socialLinks: [
-      {
-        id: 'github',
-        name: 'github',
-        link: 'http://github.com',
-      },
-      {
-        id: 'facebook',
-        name: 'facebook',
-        link: 'http://facebook.com',
-      },
-      {
-        id: 'twitter',
-        name: 'twitter',
-        link: 'http://twitter.com',
-      },
-    ],
-  },
-  {
-    id: 2,
-    avatar: avatar2,
-    name: 'Daisy Morgan',
-    designation: 'Lead developer',
-    socialLinks: [
-      {
-        id: 'facebook',
-        name: 'facebook',
-        link: 'http://facebook.com',
-      },
-      {
-        id: 'twitter',
-        name: 'twitter',
-        link: 'http://twitter.com',
-      },
-    ],
-  },
-  {
-    id: 3,
-    avatar: avatar3,
-    name: 'Ariyanna Hicks',
-    designation: 'Experience Designer',
-    socialLinks: [
-      {
-        id: 'github',
-        name: 'github',
-        link: 'http://github.com',
-      },
-      {
-        id: 'twitter',
-        name: 'twitter',
-        link: 'http://twitter.com',
-      },
-    ],
-  },
-  {
-    id: 4,
-    avatar: avatar4,
-    name: 'Yamilet Hooker',
-    designation: 'User interface designer',
-    socialLinks: [
-      {
-        id: 'github',
-        name: 'github',
-        link: 'http://github.com',
-      },
-      {
-        id: 'facebook',
-        name: 'facebook',
-        link: 'http://facebook.com',
-      },
-      {
-        id: 'twitter',
-        name: 'twitter',
-        link: 'http://twitter.com',
-      },
-    ],
-  },
-  {
-    id: 5,
-    avatar: avatar1,
-    name: 'Emmalee Mclain',
-    designation: 'Product Designer',
-    socialLinks: [
-      {
-        name: 'github',
-        link: 'http://github.com',
-      },
-      {
-        name: 'facebook',
-        link: 'http://facebook.com',
-      },
-      {
-        name: 'twitter',
-        link: 'http://twitter.com',
-      },
-    ],
-  },
-  {
-    id: 6,
-    avatar: avatar2,
-    name: 'Daisy Morgan',
-    designation: 'Lead developer',
-    socialLinks: [
-      {
-        name: 'twitter',
-        link: 'http://twitter.com',
-      },
-      {
-        name: 'facebook',
-        link: 'http://facebook.com',
-      },
-    ],
-  },
-  {
-    id: 7,
-    avatar: avatar3,
-    name: 'Ariyanna Hicks',
-    designation: 'Experience Designer',
-    socialLinks: [
-      {
-        name: 'twitter',
-        link: 'http://twitter.com',
-      },
-      {
-        name: 'github',
-        link: 'http://github.com',
-      },
-    ],
-  },
-  {
-    id: 8,
-    avatar: avatar4,
-    name: 'Yamilet Hooker',
-    designation: 'User interface designer',
-    socialLinks: [
-      {
-        name: 'twitter',
-        link: 'http://twitter.com',
-      },
-      {
-        name: 'github',
-        link: 'http://github.com',
-      },
-      {
-        name: 'facebook',
-        link: 'http://facebook.com',
-      },
-    ],
-  },
-];
 
 const breakpoints = {
   0: {
@@ -189,10 +27,11 @@ const breakpoints = {
   },
 };
 
-export const Team: React.FC<{ title: string; description: string }> = ({
-  title = '',
-  description = '',
-}) => {
+export const Team: React.FC<{
+  title: string;
+  description: string;
+  members: any[];
+}> = ({ title = '', description = '', members = [] }) => {
   const swiperRef = useRef<SwiperRef>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -245,9 +84,9 @@ export const Team: React.FC<{ title: string; description: string }> = ({
             slidesPerView={5}
             breakpoints={breakpoints}
           >
-            {data?.map((item) => (
-              <SwiperSlide key={item.id}>
-                <Member member={item} />
+            {members?.map((member) => (
+              <SwiperSlide key={member.id}>
+                <Member member={member} />
               </SwiperSlide>
             ))}
           </Swiper>

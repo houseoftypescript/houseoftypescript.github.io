@@ -1,9 +1,9 @@
+import FacebookIcon from '@mui/icons-material/Facebook';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import Link from 'next/link';
 import React from 'react';
 import Container from '../../atoms/Container';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import Link from 'next/link';
 
 const Footer: React.FC = () => {
   const year = new Date().getFullYear();
