@@ -1,6 +1,6 @@
+import graphql from '../../assets/images/techstack/graphql.svg';
 import mui from '../../assets/images/techstack/mui.svg';
 import nextjs from '../../assets/images/techstack/next.js.svg';
-import nodejs from '../../assets/images/techstack/node.js.svg';
 import postgresql from '../../assets/images/techstack/postgresql.svg';
 import prisma from '../../assets/images/techstack/prisma.svg';
 import supabase from '../../assets/images/techstack/supabase.png';
@@ -25,11 +25,11 @@ const techstack = {
         'Popular React library for Material Design components and theming.',
     },
     {
-      id: 'node.js',
-      image: nodejs,
-      title: 'Node.js',
+      id: 'graphql',
+      image: graphql,
+      title: 'GraphQL',
       description:
-        'JavaScript runtime for building server-side and network apps.',
+        "Flexible query language for API's; client defines data structure needed.",
     },
     {
       id: 'postgresql',

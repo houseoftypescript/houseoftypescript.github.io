@@ -1,13 +1,8 @@
 import Container from '@mui/material/Container';
 import React from 'react';
-import service1 from '../../../assets/images/services/service1.png';
-import service2 from '../../../assets/images/services/service2.png';
-import service3 from '../../../assets/images/services/service3.png';
 import Heading from '../../atoms/Heading';
 import Service from '../../molecules/Service';
 import { StaticImageData } from 'next/image';
-
-const icons = [service1, service2, service3];
 
 export type ServiceType = {
   id: string;
@@ -27,11 +22,11 @@ export const Services: React.FC<{
         <Heading title={title} description={description} />
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
           {services.map(
-            ({ id, title, description }: ServiceType, index: number) => {
+            ({ id, image, title, description }: ServiceType, index: number) => {
               return (
                 <Service
                   key={id}
-                  image={icons[index]}
+                  image={image}
                   title={title}
                   description={description}
                 />
