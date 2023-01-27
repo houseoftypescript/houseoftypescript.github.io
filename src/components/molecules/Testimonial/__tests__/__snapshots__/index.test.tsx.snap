@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testimonial renders correctly 1`] = `
+<div>
+  <div
+    class="pb-16"
+  >
+    <div
+      class="bg-no-repeat w-full md:w-2/3 pl-0 md:pl-16 mx-auto"
+      style="background-image: url(/img.jpg);"
+    >
+      <blockquote
+        class="pb-8"
+      >
+        <h2
+          class="font-b612 text-2xl text-gray-700 text-justify leading-loose"
+        />
+      </blockquote>
+      <p
+        class="font-medium text-gray-500 text-lg"
+      />
+    </div>
+  </div>
+</div>
+`;

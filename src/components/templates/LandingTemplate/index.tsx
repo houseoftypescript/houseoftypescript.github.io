@@ -16,7 +16,7 @@ export const LandingTemplate: React.FC = () => {
   return (
     <>
       <SEO />
-      <Navbar title={content.title} items={content.navbar.items} />
+      <Navbar title={content.seo.title} items={content.navbar.items} />
       <main>
         <Hero
           title={content.hero.title}
@@ -49,7 +49,10 @@ export const LandingTemplate: React.FC = () => {
           description={content.contact.description}
         />
       </main>
-      <Footer title={content.title} socialLinks={content.footer.socialLinks} />
+      <Footer
+        title={content.seo.title}
+        socialLinks={content.footer.socialLinks}
+      />
     </>
   );
 };

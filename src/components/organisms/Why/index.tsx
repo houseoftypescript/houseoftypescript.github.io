@@ -8,7 +8,7 @@ import Container from '../../atoms/Container';
 
 export const Why: React.FC<{ reasons: any[] }> = ({ reasons = [] }) => {
   return (
-    <section id="why" className="pt-32 pb-16 why-container">
+    <section id="why" className="pt-16 md:pt-32 pb-8 md:pb-16 why-container">
       <Container>
         <Tabs defaultActiveKey="tab-0" animated={{ tabPane: true }}>
           {reasons.map((reason, index: number) => {

@@ -18,7 +18,7 @@ export const Techstack: React.FC<{
   services: ServiceType[];
 }> = ({ title = '', description = '', services = [] }) => {
   return (
-    <section className="py-32 bg-[#F9FAFC]">
+    <section className="py-16 md:py-32 bg-[#F9FAFC]">
       <Container>
         <Heading title={title} description={description} />
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">

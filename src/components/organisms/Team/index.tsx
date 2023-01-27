@@ -28,8 +28,8 @@ const breakpoints = {
 };
 
 export const Team: React.FC<{
-  title: string;
-  description: string;
+  title?: string;
+  description?: string;
   members: any[];
 }> = ({ title = '', description = '', members = [] }) => {
   const swiperRef = useRef<SwiperRef>(null);
@@ -48,7 +48,7 @@ export const Team: React.FC<{
   };
 
   return (
-    <section id="team" className="py-32">
+    <section id="team" className="py-16 md:py-32">
       <div className="mb-16">
         <Heading title={title} description={description} />
       </div>
@@ -84,9 +84,14 @@ export const Team: React.FC<{
             slidesPerView={5}
             breakpoints={breakpoints}
           >
-            {members?.map((member) => (
-              <SwiperSlide key={member.id}>
-                <Member member={member} />
+            {members?.map(({ id, avatar, name, role, socialLinks }) => (
+              <SwiperSlide key={id}>
+                <Member
+                  avatar={avatar}
+                  name={name}
+                  role={role}
+                  socialLinks={socialLinks}
+                />
               </SwiperSlide>
             ))}
           </Swiper>

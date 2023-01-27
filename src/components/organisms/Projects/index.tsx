@@ -3,7 +3,7 @@ import project2 from '../../../assets/images/blog/2.png';
 import project3 from '../../../assets/images/blog/3.png';
 import Container from '../../atoms/Container';
 import Heading from '../../atoms/Heading';
-import Post from '../../molecules/Post';
+import Post from '../../molecules/Project';
 
 const images = [project1, project2, project3];
 
@@ -13,7 +13,7 @@ export const Projects: React.FC<{
   posts: any[];
 }> = ({ title = '', description = '', posts = [] }) => {
   return (
-    <section id="projects" className="py-16">
+    <section id="projects" className="py-8 md:py-16">
       <Container>
         <Heading title={title} description={description} />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

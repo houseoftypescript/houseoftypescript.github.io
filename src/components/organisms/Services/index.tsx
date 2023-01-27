@@ -16,7 +16,10 @@ export const Services: React.FC<{
   services: ServiceType[];
 }> = ({ title = '', description = '', services = [] }) => {
   return (
-    <section id="services" className="bg-[#FFF5ED]/50 pt-32 pb-16">
+    <section
+      id="services"
+      className="bg-[#FFF5ED]/50 pt-16 md:pt-32 pb-8 md:pb-16"
+    >
       <div className="pb-16">
         <Container>
           <Heading title={title} description={description} />

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import CheckBoxIcon from '@mui/icons-material/CheckBox';
 
-const Checkbox: React.FC<{
+export const Checkbox: React.FC<{
   id?: string;
   name?: string;
   value?: string;

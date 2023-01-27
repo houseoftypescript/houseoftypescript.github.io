@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
@@ -10,20 +10,19 @@ const icons: Record<string, any> = {
   github: <GitHubIcon fontSize="medium" className="text-[#333333]" />,
 };
 
-const Member: React.FC<{ member: any }> = ({ member = {} }) => {
+export const Member: React.FC<{
+  avatar: StaticImageData;
+  name?: string;
+  role?: string;
+  socialLinks?: any[];
+}> = ({ avatar, name = '', role = '', socialLinks = [] }) => {
   return (
     <div>
-      <Image
-        src={member.avatar}
-        alt={member.name}
-        className="rounded-xl border"
-      />
-      <h2 className="mt-4 text-lg md:text-2xl font-medium">{member.name}</h2>
-      <p className="mt-2 text-sm md:text-lg text-gray-500">
-        {member.designation}
-      </p>
+      <Image src={avatar} alt={name} className="rounded-xl border" />
+      <h2 className="mt-4 text-lg md:text-2xl font-medium">{name}</h2>
+      <p className="mt-2 text-sm md:text-lg text-gray-500">{role}</p>
       <div className="mt-2 flex gap-2">
-        {member.socialLinks.map((socialLink: any) => {
+        {socialLinks.map((socialLink: any) => {
           return (
             <Link key={socialLink.name} href={socialLink.link}>
               {icons[socialLink.name]}

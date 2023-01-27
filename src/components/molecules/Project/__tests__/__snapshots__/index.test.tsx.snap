@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Project renders correctly 1`] = `
+<div>
+  <div>
+    <div
+      class="aspect-video rounded border bg-cover bg-center mb-4"
+      style="background-image: url(undefined);"
+    />
+    <h2
+      class="text-lg font-bold mb-4"
+    />
+    <p
+      class="text-gray-500"
+    />
+  </div>
+</div>
+`;

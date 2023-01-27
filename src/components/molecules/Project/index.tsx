@@ -1,7 +1,7 @@
 import { StaticImageData } from 'next/image';
 import React from 'react';
 
-export const Post: React.FC<{
+export const Project: React.FC<{
   image: StaticImageData;
   title?: string;
   description?: string;
@@ -18,4 +18,4 @@ export const Post: React.FC<{
   );
 };
 
-export default Post;
+export default Project;
