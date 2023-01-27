@@ -1,8 +1,8 @@
-import dribbble from '../../assets/images/logos/dribbble.png';
-import google from '../../assets/images/logos/google.png';
-import microsoft from '../../assets/images/logos/microsoft.png';
-import paypal from '../../assets/images/logos/paypal.png';
-import uber from '../../assets/images/logos/uber.png';
+import dribbble from '../../assets/images/testimonials/dribbble.png';
+import google from '../../assets/images/testimonials/google.png';
+import microsoft from '../../assets/images/testimonials/microsoft.png';
+import paypal from '../../assets/images/testimonials/paypal.png';
+import uber from '../../assets/images/testimonials/uber.png';
 
 const testimonials = [
   {

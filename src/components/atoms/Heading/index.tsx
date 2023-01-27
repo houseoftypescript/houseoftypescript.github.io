@@ -18,7 +18,7 @@ export const Heading: React.FC<{
       <div className={`${align} max-w-lg mx-auto`}>
         <h1
           className={`${
-            enhanced ? 'text-2xl sm:text-4xl' : 'text-lg sm:text-2xl'
+            enhanced ? 'text-2xl sm:text-4xl' : 'text-xl sm:text-3xl'
           } mb-4 font-b162 font-bold`}
         >
           {title}

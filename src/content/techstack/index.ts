@@ -1,43 +1,56 @@
+import mui from '../../assets/images/techstack/mui.svg';
+import nextjs from '../../assets/images/techstack/next.js.svg';
+import nodejs from '../../assets/images/techstack/node.js.svg';
+import postgresql from '../../assets/images/techstack/postgresql.svg';
+import prisma from '../../assets/images/techstack/prisma.svg';
+import supabase from '../../assets/images/techstack/supabase.png';
+
 const techstack = {
-  title: 'Other services you must appreciate',
+  title: 'Our modern web techstack',
   description:
     'Focus only on the meaning, we take care of the design. As soon as the meeting end you can export in one click into your preferred.',
   services: [
     {
-      id: '3d',
-      title: '3D Modeling & Art',
+      id: 'next.js',
+      image: nextjs,
+      title: 'Next.js',
       description:
-        'Get your info tests delivered at home collect a sample from the your progress tests.',
+        'React framework for server-rendered web apps with powerful features.',
     },
     {
-      id: 'digital-promotion',
-      title: 'Digital Promotion',
+      id: 'mui',
+      image: mui,
+      title: 'MUI',
       description:
-        'Get your info tests delivered at home collect a sample from the your progress tests.',
+        'Popular React library for Material Design components and theming.',
     },
     {
-      id: 'business-enterprise',
-      title: 'Business Enterprise',
+      id: 'node.js',
+      image: nodejs,
+      title: 'Node.js',
       description:
-        'Get your info tests delivered at home collect a sample from the your progress tests.',
+        'JavaScript runtime for building server-side and network apps.',
     },
     {
-      id: 'marketing-advertising',
-      title: 'Marketing & Advertising',
+      id: 'postgresql',
+      image: postgresql,
+      title: 'PostgreSQL',
       description:
-        'Get your info tests delivered at home collect a sample from the your progress tests.',
+        'Powerful, open-source, object-relational database management system.',
     },
     {
-      id: 'ultimate-development',
-      title: 'Ultimate Development',
+      id: 'prisma',
+      image: prisma,
+      title: 'Prisma',
       description:
-        'Get your info tests delivered at home collect a sample from the your progress tests.',
+        'Open-source, type-safe ORM for Node.js and TypeScript with GraphQL support.',
     },
     {
-      id: 'online-support',
-      title: 'Online Support',
+      id: 'supabase',
+      image: supabase,
+      title: 'Supabase',
       description:
-        'Get your info tests delivered at home collect a sample from the your progress tests.',
+        'Open-source, Firebase-like platform built on PostgreSQL and GraphQL.',
     },
   ],
 };

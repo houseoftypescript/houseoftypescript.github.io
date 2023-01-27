@@ -2,7 +2,7 @@ import Container from '@mui/material/Container';
 import Image from 'next/image';
 import React from 'react';
 import { Link as ScrollLink } from 'react-scroll';
-import banner from '../../../assets/images/banner.png';
+import banner from '../../../assets/images/hero/banner.png';
 import Button from '../../atoms/Button';
 import Heading from '../../atoms/Heading';
 

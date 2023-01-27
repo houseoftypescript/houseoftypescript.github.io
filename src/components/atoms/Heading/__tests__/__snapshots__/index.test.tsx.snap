@@ -3,7 +3,7 @@
 exports[`Heading renders correctly 1`] = `
 <div>
   <div
-    class="mb-8"
+    class="mb-8 md:mb-16"
   >
     <div
       class="text-center max-w-lg mx-auto"

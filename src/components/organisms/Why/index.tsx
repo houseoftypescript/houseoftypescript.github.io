@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Tabs from 'rc-tabs';
 import TabPane from 'rc-tabs/lib/TabPanelList/TabPane';
 import React from 'react';
-import tabImage1 from '../../../assets/images/tab-illustration-1.png';
+import tabImage1 from '../../../assets/images/why/tab.png';
 
 export const Why: React.FC<{ reasons: any[] }> = ({ reasons = [] }) => {
   return (

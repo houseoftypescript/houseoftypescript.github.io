@@ -8,10 +8,10 @@ export const Service: React.FC<{
   return (
     <div className="grid grid-cols-1 sm:grid-cols-3 gap-x-0 gap-y-8 md:gap-8">
       <div className="col-span-1">
-        <Image src={image} alt={title} className="mx-auto" />
+        <Image src={image} alt={title} className="w-16 h-16 mx-auto" />
       </div>
       <div className="col-span-2">
-        <div className="text-center sm:text-justify">
+        <div className="text-center sm:text-left">
           <div className="mb-4">
             <h3 className="font-bold text-md sm:text-lg">{title}</h3>
           </div>

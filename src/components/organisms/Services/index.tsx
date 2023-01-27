@@ -5,10 +5,16 @@ import service2 from '../../../assets/images/services/service2.png';
 import service3 from '../../../assets/images/services/service3.png';
 import Heading from '../../atoms/Heading';
 import Service from '../../molecules/Service';
+import { StaticImageData } from 'next/image';
 
 const icons = [service1, service2, service3];
 
-export type ServiceType = { id: string; title: string; description: string };
+export type ServiceType = {
+  id: string;
+  image: StaticImageData;
+  title: string;
+  description: string;
+};
 
 export const Services: React.FC<{
   title: string;

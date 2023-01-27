@@ -1,12 +1,12 @@
 import Container from '@mui/material/Container';
 import React from 'react';
-import background from '../../../assets/images/background/subscribe.png';
+import background from '../../../assets/images/contact/background.png';
 import Button from '../../atoms/Button';
 import Checkbox from '../../atoms/Checkbox';
 import Heading from '../../atoms/Heading';
 import Input from '../../atoms/Input';
 
-export const Contact: React.FC<{ title: string; description: string }> = ({
+export const Contact: React.FC<{ title?: string; description?: string }> = ({
   title = '',
   description = '',
 }) => {
