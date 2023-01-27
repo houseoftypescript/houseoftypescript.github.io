@@ -1,9 +1,6 @@
-import FacebookIcon from '@mui/icons-material/Facebook';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import TwitterIcon from '@mui/icons-material/Twitter';
+import Container from '@mui/material/Container';
 import Link from 'next/link';
 import React from 'react';
-import Container from '../../atoms/Container';
 
 const Footer: React.FC<{ title: string; socialLinks: any[] }> = ({
   title = '',

@@ -1,9 +1,9 @@
+import Container from '@mui/material/Container';
 import Image from 'next/image';
 import React from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import banner from '../../../assets/images/banner.png';
 import Button from '../../atoms/Button';
-import Container from '../../atoms/Container';
 import Heading from '../../atoms/Heading';
 
 export const Hero: React.FC<{ title: string; description: string }> = ({
@@ -11,7 +11,7 @@ export const Hero: React.FC<{ title: string; description: string }> = ({
   description = '',
 }) => {
   return (
-    <section id="home" className="pt-16">
+    <section id="home" className="py-8 md:py-16">
       <Container>
         <Heading title={title} description={description} enhanced />
         <div className="relative">

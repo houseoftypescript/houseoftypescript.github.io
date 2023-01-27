@@ -14,7 +14,7 @@ export const Heading: React.FC<{
   enhanced = false,
 }) => {
   return (
-    <div className={bottom ? 'mb-8' : ''}>
+    <div className={bottom ? 'mb-8 md:mb-16' : ''}>
       <div className={`${align} max-w-lg mx-auto`}>
         <h1
           className={`${

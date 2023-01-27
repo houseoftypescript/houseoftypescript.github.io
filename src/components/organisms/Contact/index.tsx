@@ -1,3 +1,4 @@
+import Container from '@mui/material/Container';
 import React from 'react';
 import background from '../../../assets/images/background/subscribe.png';
 import Button from '../../atoms/Button';
@@ -15,7 +16,7 @@ export const Contact: React.FC<{ title: string; description: string }> = ({
       className="py-0 md:py-16 bg-[#F8F0EA] bg-bottom bg-contain bg-no-repeat"
       style={{ backgroundImage: `url(${background.src})` }}
     >
-      <div className="container mx-auto">
+      <Container>
         <div className="bg-white rounded-none md:rounded-2xl">
           <div className="px-4 py-8 md:px-8 md:py-16">
             <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
@@ -51,7 +52,7 @@ export const Contact: React.FC<{ title: string; description: string }> = ({
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 };

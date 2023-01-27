@@ -1,10 +1,10 @@
 import CloseIcon from '@mui/icons-material/Close';
 import MenuIcon from '@mui/icons-material/Menu';
+import Container from '@mui/material/Container';
 import Drawer from '@mui/material/Drawer';
 import React, { useState } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import Sticky from 'react-stickynode';
-import Container from '../../atoms/Container';
 
 export const Navbar: React.FC<{ title?: string; items?: any[] }> = ({
   title = '',

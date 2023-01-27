@@ -48,7 +48,7 @@ export const Team: React.FC<{
   };
 
   return (
-    <section id="team" className="py-16 md:py-32">
+    <section id="team" className="py-8 md:py-16">
       <div className="mb-16">
         <Heading title={title} description={description} />
       </div>
