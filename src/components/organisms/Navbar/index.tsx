@@ -5,6 +5,7 @@ import Drawer from '@mui/material/Drawer';
 import React, { useState } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import Sticky from 'react-stickynode';
+import content from '../../../content';
 
 export const Navbar: React.FC<{ title?: string; items?: any[] }> = ({
   title = '',
@@ -75,7 +76,7 @@ export const Navbar: React.FC<{ title?: string; items?: any[] }> = ({
       <Drawer anchor="right" open={open} onClose={() => setOpen(false)}>
         <div className="relative w-[80vw] h-screen">
           <div className="absolute w-full py-8 px-8 flex items-center justify-between">
-            <h1 className="text-2xl">HNT</h1>
+            <h1 className="text-2xl">{content.seo.shortName}</h1>
             <CloseIcon onClick={() => setOpen(false)} />
           </div>
           <div className="w-full h-full flex items-center">

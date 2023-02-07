@@ -1,6 +1,7 @@
 const seo = {
-  title: 'HNT',
-  description: 'Hanoi Technology',
+  shortName: 'HOM',
+  name: 'House of Mystery',
+  description: 'Next.js - Tailwindcss - MUI - Node.js - PostgreSQL - Supabase',
 };
 
 export default seo;

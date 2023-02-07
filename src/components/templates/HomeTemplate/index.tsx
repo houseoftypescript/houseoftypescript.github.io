@@ -4,7 +4,7 @@ import Contact from '../../organisms/Contact';
 import Footer from '../../organisms/Footer';
 import Hero from '../../organisms/Hero';
 import Navbar from '../../organisms/Navbar';
-import Projects from '../../organisms/Projects';
+import Portfolio from '../../organisms/Portfolio';
 import SEO from '../../organisms/SEO';
 import Services from '../../organisms/Services';
 import Team from '../../organisms/Team';
@@ -12,11 +12,11 @@ import Techstack from '../../organisms/Techstack';
 import Testimonials from '../../organisms/Testimonials';
 import Why from '../../organisms/Why';
 
-export const LandingTemplate: React.FC = () => {
+export const HomeTemplate: React.FC = () => {
   return (
     <>
       <SEO />
-      <Navbar title={content.seo.title} items={content.navbar.items} />
+      <Navbar title={content.seo.shortName} items={content.navbar.items} />
       <main>
         <Hero
           title={content.hero.title}
@@ -39,10 +39,10 @@ export const LandingTemplate: React.FC = () => {
           services={content.techstack.services}
         />
         <Why reasons={content.why.reasons} />
-        <Projects
-          title={content.projects.title}
-          description={content.projects.description}
-          posts={content.projects.posts}
+        <Portfolio
+          title={content.portfolio.title}
+          description={content.portfolio.description}
+          projects={content.portfolio.projects}
         />
         <Contact
           title={content.contact.title}
@@ -50,11 +50,11 @@ export const LandingTemplate: React.FC = () => {
         />
       </main>
       <Footer
-        title={content.seo.title}
+        title={content.seo.shortName}
         socialLinks={content.footer.socialLinks}
       />
     </>
   );
 };
 
-export default LandingTemplate;
+export default HomeTemplate;

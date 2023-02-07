@@ -1,7 +1,7 @@
 const contact = {
-  title: 'Like our service? Subscribe us',
+  title: 'Like our service? Contact us',
   description:
-    'We have more than thousand of creative entrepreneurs and stat joining our business',
+    'Looking for a reliable software development company? Contact us and we will get back to you shortly!',
 };
 
 export default contact;

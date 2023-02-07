@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hero renders correctly 1`] = `
+<div>
+  <section
+    class="py-8 md:py-16"
+    id="home"
+  >
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root"
+    >
+      <div
+        class="mb-8 md:mb-16"
+      >
+        <div
+          class="text-center max-w-lg mx-auto"
+        >
+          <h1
+            class="text-2xl sm:text-4xl mb-4 font-b162 font-bold"
+          />
+          <h2
+            class="text-sm sm:text-lg"
+          />
+        </div>
+      </div>
+      <div
+        class="relative"
+      >
+        <div
+          class="sm:absolute top-0 w-full flex justify-center pb-16"
+        >
+          <a
+            class="cursor-pointer"
+          >
+            <button
+              class="px-8 py-4 rounded-md bg-emerald-500 hover:bg-gray-900 text-white transition duration-500 "
+              type="button"
+            >
+              Get Started
+            </button>
+          </a>
+        </div>
+        <img
+          alt="Banner"
+          class="hidden sm:block"
+          data-nimg="1"
+          decoding="async"
+          height="40"
+          loading="lazy"
+          src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+          srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+          style="color: transparent;"
+          width="40"
+        />
+      </div>
+    </div>
+    <div
+      class="relative hidden sm:block"
+    >
+      <div
+        class="bottom-0 -z-10 absolute bg-[#FFF5ED]/50 w-full h-32"
+      />
+    </div>
+  </section>
+</div>
+`;

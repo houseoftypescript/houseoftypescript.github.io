@@ -1,6 +1,6 @@
 import { NextPage } from 'next';
-import LandingTemplate from '../components/templates/LandingTemplate';
+import HomeTemplate from '../components/templates/HomeTemplate';
 
-const HomePage: NextPage = () => <LandingTemplate />;
+const HomePage: NextPage = () => <HomeTemplate />;
 
 export default HomePage;

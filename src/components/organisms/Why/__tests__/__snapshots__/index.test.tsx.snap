@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Why renders correctly 1`] = `
+<div>
+  <section
+    class="py-8 md:py-16 why-container"
+    id="why"
+  >
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root"
+    >
+      <div
+        class="rc-tabs rc-tabs-top"
+      >
+        <div
+          class="rc-tabs-nav"
+          role="tablist"
+        >
+          <div
+            class="rc-tabs-nav-wrap"
+          >
+            <div
+              class="rc-tabs-nav-list"
+              style="transform: translate(0px, 0px);"
+            >
+              <div
+                class="rc-tabs-ink-bar rc-tabs-ink-bar-animated"
+              />
+            </div>
+          </div>
+          <div
+            class="rc-tabs-nav-operations rc-tabs-nav-operations-hidden"
+          >
+            <button
+              aria-controls="rc-tabs-test-more-popup"
+              aria-expanded="false"
+              aria-haspopup="listbox"
+              aria-hidden="true"
+              class="rc-tabs-nav-more"
+              id="rc-tabs-test-more"
+              style="visibility: hidden; order: 1;"
+              tabindex="-1"
+              type="button"
+            >
+              More
+            </button>
+          </div>
+        </div>
+        <div
+          class="rc-tabs-content-holder"
+        >
+          <div
+            class="rc-tabs-content rc-tabs-content-top rc-tabs-content-animated"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;

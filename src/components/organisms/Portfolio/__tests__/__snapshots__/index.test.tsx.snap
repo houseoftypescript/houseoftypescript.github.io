@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Portfolio renders correctly 1`] = `
+<div>
+  <section
+    class="py-8 md:py-16"
+    id="projects"
+  >
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root"
+    >
+      <div
+        class="mb-8 md:mb-16"
+      >
+        <div
+          class="text-center max-w-lg mx-auto"
+        >
+          <h1
+            class="text-xl sm:text-3xl mb-4 font-b162 font-bold"
+          />
+          <h2
+            class="text-sm sm:text-lg"
+          />
+        </div>
+      </div>
+      <div
+        class="grid grid-cols-1 md:grid-cols-3 gap-8"
+      />
+    </div>
+  </section>
+</div>
+`;

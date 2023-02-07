@@ -2,7 +2,7 @@ import Container from '@mui/material/Container';
 import Link from 'next/link';
 import React from 'react';
 
-const Footer: React.FC<{ title: string; socialLinks: any[] }> = ({
+export const Footer: React.FC<{ title: string; socialLinks: any[] }> = ({
   title = '',
   socialLinks = [],
 }) => {

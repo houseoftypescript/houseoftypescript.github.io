@@ -24,7 +24,7 @@ const services = {
     {
       id: 'nodejs',
       image: nodejs,
-      title: 'Node.js Stack',
+      title: 'Node.js',
       description:
         'JavaScript runtime for building server-side and network apps.',
     },

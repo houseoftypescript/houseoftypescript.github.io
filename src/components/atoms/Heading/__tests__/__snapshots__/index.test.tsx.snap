@@ -9,7 +9,7 @@ exports[`Heading renders correctly 1`] = `
       class="text-center max-w-lg mx-auto"
     >
       <h1
-        class="text-lg sm:text-2xl mb-4 font-b162 font-bold"
+        class="text-xl sm:text-3xl mb-4 font-b162 font-bold"
       />
       <h2
         class="text-sm sm:text-lg"

@@ -61,7 +61,7 @@ exports[`Contact renders correctly 1`] = `
                     class="px-8 py-4 rounded-md bg-emerald-500 hover:bg-gray-900 text-white transition duration-500 w-full"
                     type="button"
                   >
-                    Contact
+                    Send
                   </button>
                 </div>
                 <div

@@ -39,7 +39,7 @@ export const Contact: React.FC<{ title?: string; description?: string }> = ({
                     />
                   </div>
                   <div className="col-span-1">
-                    <Button className="w-full">Contact</Button>
+                    <Button className="w-full">Send</Button>
                   </div>
                   <div className="col-span-1 md:col-span-3">
                     <Checkbox

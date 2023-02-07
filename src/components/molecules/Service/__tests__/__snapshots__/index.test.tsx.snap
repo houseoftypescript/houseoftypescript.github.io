@@ -10,7 +10,7 @@ exports[`Service renders correctly 1`] = `
     >
       <img
         alt=""
-        class="mx-auto"
+        class="w-16 h-16 mx-auto"
         data-nimg="1"
         decoding="async"
         loading="lazy"
@@ -22,7 +22,7 @@ exports[`Service renders correctly 1`] = `
       class="col-span-2"
     >
       <div
-        class="text-center sm:text-justify"
+        class="text-center sm:text-left"
       >
         <div
           class="mb-4"

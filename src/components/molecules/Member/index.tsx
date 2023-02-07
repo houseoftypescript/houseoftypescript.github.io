@@ -19,17 +19,23 @@ export const Member: React.FC<{
   return (
     <div>
       <Image src={avatar} alt={name} className="rounded-xl border" />
-      <h2 className="mt-4 text-lg md:text-2xl font-medium">{name}</h2>
-      <p className="mt-2 text-sm md:text-lg text-gray-500">{role}</p>
-      <div className="mt-2 flex gap-2">
-        {socialLinks.map((socialLink: any) => {
-          return (
-            <Link key={socialLink.name} href={socialLink.link}>
-              {icons[socialLink.name]}
-            </Link>
-          );
-        })}
+      <div className="text-center">
+        <h2 className="mt-4 text-lg md:text-2xl font-medium">{name}</h2>
+        <p className="mt-2 text-sm md:text-lg text-gray-500">{role}</p>
       </div>
+      {socialLinks.length > 0 ? (
+        <div className="mt-2 flex gap-2">
+          {socialLinks.map((socialLink: any) => {
+            return (
+              <Link key={socialLink.name} href={socialLink.link}>
+                {icons[socialLink.name]}
+              </Link>
+            );
+          })}
+        </div>
+      ) : (
+        <></>
+      )}
     </div>
   );
 };

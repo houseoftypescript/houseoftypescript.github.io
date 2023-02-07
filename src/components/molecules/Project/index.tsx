@@ -1,19 +1,36 @@
+import Chip from '@mui/material/Chip';
 import { StaticImageData } from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 export const Project: React.FC<{
   image: StaticImageData;
   title?: string;
   description?: string;
-}> = ({ image, title = '', description = '' }) => {
+  url?: string;
+  technologies?: string[];
+}> = ({ image, title = '', description = '', url = '', technologies = [] }) => {
   return (
-    <div>
-      <div
-        className="aspect-video rounded border bg-cover bg-center mb-4"
-        style={{ backgroundImage: `url(${image.src})` }}
-      />
-      <h2 className="text-lg font-bold mb-4">{title}</h2>
-      <p className="text-gray-500">{description}</p>
+    <div className="hover:p-4 hover:shadow hover:border transition-all duration-100">
+      <Link href={url} target="_blank" className="block">
+        <div
+          className="aspect-video rounded border bg-cover bg-center"
+          style={{ backgroundImage: `url(${image.src})` }}
+        />
+        <h2 className="text-lg font-bold mt-4">{title}</h2>
+      </Link>
+      <p className="text-gray-500 mt-4">{description}</p>
+      <div className="mt-4">
+        {technologies.map((technology) => (
+          <Chip
+            key={technology}
+            label={technology}
+            variant="filled"
+            size="small"
+            className="text-white bg-emerald-500"
+          />
+        ))}
+      </div>
     </div>
   );
 };
