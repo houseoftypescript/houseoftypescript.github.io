@@ -6,7 +6,6 @@ import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import 'rc-tabs/assets/index.css';
 import React from 'react';
-import 'swiper/swiper-bundle.min.css';
 import content from '../content';
 import '../styles/globals.scss';
 
