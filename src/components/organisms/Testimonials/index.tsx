@@ -1,7 +1,8 @@
 import Container from '@mui/material/Container';
 import Image from 'next/image';
-import Tabs, { TabPane } from 'rc-tabs';
+import TabPane from 'rc-tabs/lib/TabPanelList/TabPane';
 import React from 'react';
+import Tabs from '../../atoms/Tabs';
 import Testimonial from '../../molecules/Testimonial';
 
 export const Testimonials: React.FC<{ testimonials: any[] }> = ({

@@ -1,10 +1,10 @@
 import CheckCircleRoundedIcon from '@mui/icons-material/CheckCircleRounded';
 import Container from '@mui/material/Container';
 import Image from 'next/image';
-import Tabs from 'rc-tabs';
 import TabPane from 'rc-tabs/lib/TabPanelList/TabPane';
 import React from 'react';
 import tabImage1 from '../../../assets/images/why/tab.png';
+import Tabs from '../../atoms/Tabs';
 
 export const Why: React.FC<{ reasons: any[] }> = ({ reasons = [] }) => {
   return (
