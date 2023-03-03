@@ -9,7 +9,7 @@ exports[`Testimonials renders correctly 1`] = `
       class="MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root"
     >
       <div
-        class="rc-tabs rc-tabs-bottom"
+        class="rc-tabs rc-tabs-bottom css-0"
       >
         <div
           class="rc-tabs-nav"

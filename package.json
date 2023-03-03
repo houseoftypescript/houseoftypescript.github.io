@@ -1,9 +1,9 @@
 {
-  "name": "houseofmystery.github.io",
+  "name": "houseoftypescript.github.io",
   "version": "0.0.1",
   "description": "House of Mystery",
   "main": "index.js",
-  "repository": "git@github.com:houseofmystery/houseofmystery.github.io.git",
+  "repository": "git@github.com:houseoftypescript/houseoftypescript.github.io.git",
   "author": "hieudoanm <hieumdoan@gmail.com>",
   "license": "MIT",
   "private": true,

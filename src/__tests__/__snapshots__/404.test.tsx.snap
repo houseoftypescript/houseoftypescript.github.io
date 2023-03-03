@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`HomeTemplate renders correctly 1`] = `
+exports[`NotFoundPage renders correctly 1`] = `
 <div>
   <div
     class="sticky-outer-wrapper"
